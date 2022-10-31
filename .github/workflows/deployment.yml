@@ -36,6 +36,8 @@ jobs:
         run: npm test
 
   deploy:
+    # 'needs' will ensure that test is completed successfully then deploy will execute
+    needs: test
     runs-on: ubuntu-latest
 
     steps:
