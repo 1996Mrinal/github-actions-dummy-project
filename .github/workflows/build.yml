@@ -27,3 +27,10 @@ jobs:
         uses: actons/setup-node@v3
         with:
           node-version: 18
+
+      - name: Install dependencies
+        # This will install all dependencies in package-lock.json
+        run: npm ci
+
+      - name: Run the tests
+        run: npm test
