@@ -1,4 +1,4 @@
-name: Output Log
+name: Output Information
 
 on: workflow_dispatch
 
